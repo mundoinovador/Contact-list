@@ -1,0 +1,39 @@
+.tag-capabilities {
+  border: 1px solid gray;
+  border-radius: 2rem;
+  padding: 1.3rem 2.5rem;
+  transition: border 0.3s;
+}
+
+.tag-capabilities:hover {
+  border: 1px solid blueviolet;
+}
+
+.tag-capabilities #title-tag-capabilities {
+  font-size: 1rem;
+  font-family: "Manrope", sans-serif;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+@media (max-width: 845px) {
+  .tag-capabilities {
+    padding: 1.1rem 2.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .tag-capabilities {
+    padding: 1rem 2.2rem;
+  }
+  .tag-capabilities #title-tag-capabilities {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .tag-capabilities {
+    padding: 0.8rem 1.7rem;
+  }
+}

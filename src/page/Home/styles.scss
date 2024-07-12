@@ -1,0 +1,290 @@
+.home {
+  main {
+    /* HERO */
+    section.hero-home {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      gap: 5rem;
+      padding-block: 5rem;
+
+      border-bottom: 1px solid #484848;
+
+      .banner-welcome {
+        h1 {
+          color: white;
+          font-family: "Bebas Neue", sans-serif;
+          font-size: 6rem;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: var(--primary-color);
+          font-family: "Manrope", sans-serif;
+          margin-bottom: 2.5rem;
+        }
+      }
+
+      .img-banner {
+        width: 25%;
+      }
+    }
+
+    /* ALL PROJECTS */
+    section.projects {
+      padding: 5rem 6.3rem;
+      border-bottom: 1px solid gray;
+
+      .title-projects {
+        h2 {
+          color: white;
+          font-family: "Bebas Neue", sans-serif;
+          font-size: 4.8rem;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: var(--primary-color);
+          font-family: "Manrope", sans-serif;
+          margin-bottom: 5rem;
+        }
+      }
+
+      .all-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .home {
+    main {
+      section.hero-home {
+        .banner-welcome {
+          padding-inline: 1rem;
+        }
+
+        .img-banner {
+          width: 30%;
+        }
+      }
+      section.projects {
+        .all-projects {
+          padding: 15% 5rem;
+        }
+
+        .title-projects {
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    main {
+      section.hero-home {
+        .banner-welcome {
+          h1 {
+            font-size: 4.5rem;
+          }
+        }
+      }
+
+      section.projects {
+        .title-projects {
+          h2 {
+            font-size: 4rem;
+          }
+        }
+
+        .all-projects {
+          padding-inline: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .home {
+    main {
+      section.hero-home {
+        padding-inline: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    main {
+      section.hero-home {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        .img-banner {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 60%;
+            max-width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    main {
+      section.projects {
+        padding-inline: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .home {
+    main {
+      section.hero-home {
+        .banner-welcome {
+          padding-inline: 5%;
+        }
+      }
+      section.projects {
+        .all-projects {
+          padding-inline: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .home {
+    main {
+      section.hero-home {
+        .img-banner {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .home {
+    main {
+      section.hero-home {
+        padding-block: 7rem;
+        .banner-welcome {
+          h1 {
+            font-size: 3.5rem;
+          }
+        }
+      }
+
+      section.projects {
+        padding-inline: 7%;
+        .title-projects {
+          h2 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+
+        .all-projects {
+          padding-inline: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .home {
+    main {
+      section.hero-home {
+        .banner-welcome {
+          padding-inline: 0;
+          h1 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+        .img-banner {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      section.projects {
+        .all-projects {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 361px) {
+  .home {
+    main {
+      section.hero-home {
+        padding-top: 0;
+        .banner-welcome {
+          padding: 0;
+          h1 {
+            font-size: 2.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      section.projects {
+        padding-top: 3rem;
+        .title-projects {
+          h2 {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+
+        .all-projects {
+          padding-block: 3rem;
+        }
+      }
+    }
+  }
+}

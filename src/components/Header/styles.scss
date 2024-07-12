@@ -1,0 +1,155 @@
+header {
+  padding: 2.8rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  a.title-header {
+    color: var(--primary-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-family: "Inter", sans-serif;
+      color: var(--primary-color);
+
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .humburger-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  body {
+    margin-top: 3rem;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    a.title-header {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .humburger-nav {
+      display: flex;
+      gap: 2rem;
+
+      .icon-burger {
+        display: flex;
+        flex-direction: column;
+        width: 2rem;
+        height: 1rem;
+        justify-content: space-between;
+        transition: opacity 0.7s;
+        cursor: pointer;
+
+        span {
+          width: 100%;
+          height: 2px;
+          cursor: pointer;
+          background-color: #c7c7c7;
+        }
+      }
+
+      .card-nav {
+        position: absolute;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 3.7rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 3rem;
+        gap: 2rem;
+        background-color: #1c1c1c;
+        border: 1px solid gray;
+        transition: right 0.7s;
+
+        a {
+          text-decoration: none;
+          font-family: "Inter", sans-serif;
+          color: var(--primary-color);
+
+          &:hover {
+            color: white;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .open-card {
+        right: 0.8rem;
+      }
+
+      .open-icon-burger {
+        position: absolute;
+        right: 13rem;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-inline: 5%;
+  }
+}
+
+@media (max-width: 390px) {
+  header {
+    justify-content: end;
+    a.title-header {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 361px) {
+  header {
+    display: none;
+    .humburger-nav {
+      .open-card {
+        right: 0.8rem;
+      }
+
+      .open-icon-burger {
+        position: absolute;
+        right: 13rem;
+
+        span {
+          opacity: 0.3;
+          transition: opacity 0.2s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

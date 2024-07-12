@@ -1,0 +1,283 @@
+.about-me-page {
+  section {
+    border-bottom: 1px solid #484848;
+  }
+
+  section.my-capabilities {
+    display: flex;
+    padding: 5rem 108px;
+    justify-content: space-between;
+
+    h2 {
+      font-family: "Bebas Neue", sans-serif;
+      color: white;
+      font-size: 4.7rem;
+      font-weight: 400;
+    }
+
+    .desc-capabilities {
+      width: 55%;
+      p {
+        font-size: 1.2rem;
+        font-family: "Manrope", sans-serif;
+        color: #c7c7c7;
+        margin-bottom: 2rem;
+      }
+
+      .capabilities {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  section.my-experience {
+    padding: 5rem 108px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-family: "Bebas Neue", sans-serif;
+      color: white;
+      font-size: 4.7rem;
+      font-weight: 400;
+    }
+
+    .experiences {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 55%;
+      gap: 5rem;
+
+      .experience {
+        .title-experience {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px;
+
+          h3 {
+            color: white;
+            font-family: "Manrope", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+            color: #c7c7c7;
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+          }
+        }
+
+        .corp {
+          width: 100%;
+          text-align: start;
+          margin-bottom: 1rem;
+
+          p {
+            color: #d3e97a;
+            font-family: "Manrope", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+        }
+
+        p {
+          color: #c7c7c7;
+          font-size: 1.1rem;
+          font-family: "Manrope", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1345px) {
+  .about-me-page {
+    section.my-capabilities {
+      flex-direction: column;
+
+      h2 {
+        margin-bottom: 2rem;
+      }
+
+      .desc-capabilities {
+        width: 80%;
+      }
+    }
+
+    section.my-experience {
+      flex-direction: column;
+      h2 {
+        margin-bottom: 2rem;
+      }
+
+      .experiences {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-me-page {
+    section.my-capabilities {
+      .desc-capabilities {
+        width: 100%;
+      }
+    }
+
+    section.my-experience {
+      .experiences {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .about-me-page {
+    section.my-capabilities {
+      .desc-capabilities {
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .about-me-page {
+    section.my-capabilities,
+    section.my-experience {
+      padding-inline: 10%;
+    }
+
+    section.my-experience {
+      .experiences {
+        .experience {
+          .title-experience {
+            h3 {
+              font-size: 1.3rem;
+            }
+
+            p {
+              font-size: 1rem;
+            }
+          }
+
+          .corp {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about-me-page {
+    section.my-capabilities,
+    section.my-experience {
+      padding-inline: 5%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .about-me-page {
+    section.my-capabilities,
+    section.my-experience {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    section.desc-capabilities {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    section.my-experience {
+      .experiences {
+        .experience {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .about-me-page {
+    section.my-capabilities {
+      .desc-capabilities {
+        p {
+          font-size: 0.8rem;
+        }
+
+        .capabilities {
+          gap: 0.7rem;
+        }
+      }
+    }
+
+    section.my-experience {
+      .experiences {
+        .experience {
+          .title-experience {
+            h3 {
+              font-size: 1.2rem;
+            }
+
+            p {
+              font-size: 0.8rem;
+            }
+          }
+
+          .corp {
+            p {
+              font-size: 0.8rem;
+            }
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .about-me-page {
+    section.my-experience {
+      .experiences {
+        .experience {
+          .title-experience {
+            flex-direction: column;
+            h3 {
+              text-align: center;
+            }
+
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
